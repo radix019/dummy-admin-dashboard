@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import "./AddProduct.css";
-import { ProductContext } from "./context/Product";
 import { useNavigate } from "react-router-dom";
-import { PAGES } from "./global/constants";
+
 import uuid from "react-uuid";
+import { ProductContext } from "../../context/Product";
+import { PAGES } from "../../global/constants";
 
 const AddProduct = () => {
   const [name, setName] = useState("");

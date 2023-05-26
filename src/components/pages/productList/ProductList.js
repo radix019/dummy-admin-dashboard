@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./ProductList.css";
-import { ProductContext } from "./context/Product";
+import { ProductContext } from "../../context/Product";
+
 const ProductList = () => {
   const { allProducts, isLoading } = useContext(ProductContext);
   const [currentPage, setCurrentPage] = useState(1);
